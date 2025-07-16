@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container">
+    <ul id="taskList">
+        <li class="item">
+            <p>task 1</p>
+            <div><button class="button">delete</button></div>
+        </li>
+        <li class="item">
+            <p>task 2</p>
+            <div><button class="button">delete</button></div>
+        </li>
+        <li class="item">
+            <p>task 3</p>
+            <div><button class="button">delete</button></div>
+        </li>
+        <li class="item">
+            <p>task 4</p>
+            <div><button class="button">delete</button></div>
+        </li>
+        <li class="item">
+            <p>task 5</p>
+            <div><button class="button">delete</button></div>
+        </li>
+    </ul>
+    <form id="addTask">
+        <input type="text" placeholder="new task" id="taskText">
+        <button type="submit" class="button">add</button>
+    </form>
+    <style>
+        .item{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .button{
+            padding: 10px 15px;
+            border: 2px solid black;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 20px;
+            background-color: azure;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover{
+            background-color: black;
+            color: azure;
+        }
+        #taskText{
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+        #addTask{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>
