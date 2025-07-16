@@ -25,7 +25,9 @@ newTask.addEventListener('submit', function(event) { // create element
         btnDel.textContent = 'delete';
         li.appendChild(btnDel); // add button in item
         btnDel.classList.add('button');
+        
         tasks.appendChild(li); // add item in list
         text.value = ''; // clear after click
+        text.ariaPlaceholder = "new task"; // create placeholder after click button
     };
 });
