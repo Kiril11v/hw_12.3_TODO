@@ -33,11 +33,22 @@
         <button type="submit" class="button">add</button>
     </form>
     <style>
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
         .item{
             display: flex;
-            gap: 10px;
+            gap: 20px;
             align-items: center;
             justify-content: center;
+            
         }
         .button{
             padding: 10px 15px;
@@ -47,6 +58,8 @@
             border-radius: 20px;
             background-color: azure;
             transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            white-space: nowrap;
+
         }
         .button:hover{
             background-color: black;
@@ -59,6 +72,11 @@
         #addTask{
             display: flex;
             justify-content: center;
+        }
+        p{
+            flex-wrap: wrap;
+            width: 150px;
+            word-break: break-word;
         }
     </style>
     <script src="index.js"></script>
